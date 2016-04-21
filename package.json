@@ -1,0 +1,26 @@
+{
+  "name": "hb2_app",
+  "version": "1.0.0",
+  "description": "Application using node, d3.js, and angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brmayes/hb2_app.git"
+  },
+  "author": "brmayes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brmayes/hb2_app/issues"
+  },
+  "homepage": "https://github.com/brmayes/hb2_app#readme",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "d3": "^3.5.16",
+    "express": "^4.13.4"
+  }
+}
