@@ -1,11 +1,12 @@
+/* Fonts */
 @font-face {
   font-family: 'Texta';
-  src: url('../assets/fonts/texta_book/Texta-Book-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../assets/fonts/texta_book/Texta-Book-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/texta_book/Texta-Book-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/texta_book/Texta-Book-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../assets/fonts/texta_book/Texta-Book-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/texta_book/Texta-Book-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../assets/fonts/texta_regular/Texta-Regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/texta_regular/Texta-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/texta_regular/Texta-Regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/texta_regular/Texta-Regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/texta_regular/Texta-Regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/texta_regular/Texta-Regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
@@ -18,18 +19,105 @@
        url('../assets/fonts/texta_italic/Texta-Italic-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'Texta Bold';
+  src: url('../assets/fonts/texta_bold/Texta-Bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/texta_bold/Texta-Bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/texta_bold/Texta-Bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/texta_bold/Texta-Bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/texta_bold/Texta-Bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/texta_bold/Texta-Bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700);
 
+//colors
+$blue: #2c3e50;
+$red: #963019;
+$white: #f6f1ed;
+$green: #667467;
+$yellow: #E4B648;
+$black: #141414;
+
+/* General */
 h1 {
   font-family: 'Noto Serif', serif;
   font-weight: 700;
-  font-size: 24pt;
 }
 
 body {
   font-family: 'Texta', sans-serif;
+  font-size: 15pt;
+  color: $black;
 }
 
 em {
   font-family: 'Texta Italic', sans-serif;
+  font-style: italic;
+}
+
+strong {
+  font-family: 'Texta Bold', sans-serif;
+  font-weight: 700;
+}
+
+::selection {
+  background: #E4B648; /* Webkit browers */
+}
+
+::-moz-selection {
+  background: #E4B648; /* Gecko browsers */
+}
+
+.menu {
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+/* DOCUMENT PAGE SPECIFIC STYLES */
+
+.document-text {
+  p {
+    text-indent: 35px;
+  }
+
+  .no-indent {
+    text-indent: 0px !important;
+  }
+
+  .part-heading, .section-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .article-heading {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  ol {
+    counter-reset: list;
+  }
+  ol > li {
+    list-style: none;
+  }
+
+  ol > li:before {
+    content: "(" counter(list, lower-alpha) ") ";
+    counter-increment: list;
+  }
+
+  .second-level {
+    ol > li:before {
+      content: "(" counter(list, decimal) ") ";
+      counter-increment: list;
+    }
+  }
+
+
 }
