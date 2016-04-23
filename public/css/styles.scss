@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Texta';
+  src: url('../assets/fonts/texta_book/Texta-Book-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/texta_book/Texta-Book-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/texta_book/Texta-Book-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/texta_book/Texta-Book-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/texta_book/Texta-Book-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/texta_book/Texta-Book-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Texta Italic';
+  src: url('../assets/fonts/texta_italic/Texta-Italic-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/texta_italic/Texta-Italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/texta_italic/Texta-Italic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/texta_italic/Texta-Italic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/texta_italic/Texta-Italic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/texta_italic/Texta-Italic-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700);
+
+h1 {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 24pt;
+}
+
+body {
+  font-family: 'Texta', sans-serif;
+}
+
+em {
+  font-family: 'Texta Italic', sans-serif;
+}
