@@ -24,7 +24,7 @@
       <p>
         Break down HB2 by using the search bar to highlight certain aspects of the law.
       </p>
-      <input type="text" placeholder="Search" ng-model="search.text"><br><br>
+      <input type="text" placeholder="Search" ng-model="search.text"><br />
 
       <!-- with filter -->
       <div class="docText" ng-repeat="item in data" ng-bind-html="item.text | highlight:search.text"></div>

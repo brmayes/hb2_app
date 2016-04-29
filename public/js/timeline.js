@@ -27,6 +27,12 @@ var yAxis = d3.svg.axis()
 var cValue = function(d) { return d.type;},
     color = d3.scale.category10();
 
+var cValue = function(d) {
+  return d.type;
+
+  console.log(d.type);
+}
+
 // Define the line
 // var valueline = d3.svg.line()
 //     .x(function(d) { return x(d.date); })

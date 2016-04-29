@@ -41,13 +41,11 @@ $black: #141414;
 
 /* General */
 
-@media (max-width: 1200px){
-  .container {
-      // width: 970px;
-      background-color: white;
-      padding: 25px;
-  }
+.container {
+    background-color: white;
+    padding: 50px;
 }
+
 
 body {
   font-family: 'Texta', sans-serif;
@@ -117,11 +115,22 @@ h1 {
     list-style-type: none;
     margin: 0 auto;
     display: block;
-    width: 300px;
+    width: 400px;
   }
 
   li {
     display: inline-block;
+  }
+
+  @for $i from 2 through 4 {
+    li:nth-of-type(#{$i}) {
+      margin: 0 8px;
+
+      &:before {
+        content: ' | ';
+        margin-right: 14px;
+      }
+    }
   }
 }
 
