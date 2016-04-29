@@ -1,36 +1,38 @@
 /* Fonts */
 @font-face {
   font-family: 'Texta';
-  src: url('../assets/fonts/texta_regular/Texta-Regular-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../assets/fonts/texta_regular/Texta-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/texta_regular/Texta-Regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/texta_regular/Texta-Regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../assets/fonts/texta_regular/Texta-Regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/texta_regular/Texta-Regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../assets/fonts/texta_regular/Texta-Regular-webfont.eot');
+  /* IE9 Compat Modes */
+  src:/* IE6-IE8 */
+  /* Super Modern Browsers */
+  /* Pretty Modern Browsers */
+  /* Safari, Android, iOS */
+  url('../assets/fonts/texta_regular/Texta-Regular-webfont.eot?#iefix') format('embedded-opentype'),url('../assets/fonts/texta_regular/Texta-Regular-webfont.woff2') format('woff2'),url('../assets/fonts/texta_regular/Texta-Regular-webfont.woff') format('woff'),url('../assets/fonts/texta_regular/Texta-Regular-webfont.ttf') format('truetype'),url('../assets/fonts/texta_regular/Texta-Regular-webfont.svg#svgFontName') format('svg');
+  /* Legacy iOS */
 }
-
 @font-face {
   font-family: 'Texta Italic';
-  src: url('../assets/fonts/texta_italic/Texta-Italic-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../assets/fonts/texta_italic/Texta-Italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/texta_italic/Texta-Italic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/texta_italic/Texta-Italic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../assets/fonts/texta_italic/Texta-Italic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/texta_italic/Texta-Italic-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../assets/fonts/texta_italic/Texta-Italic-webfont.eot');
+  /* IE9 Compat Modes */
+  src:/* IE6-IE8 */
+  /* Super Modern Browsers */
+  /* Pretty Modern Browsers */
+  /* Safari, Android, iOS */
+  url('../assets/fonts/texta_italic/Texta-Italic-webfont.eot?#iefix') format('embedded-opentype'),url('../assets/fonts/texta_italic/Texta-Italic-webfont.woff2') format('woff2'),url('../assets/fonts/texta_italic/Texta-Italic-webfont.woff') format('woff'),url('../assets/fonts/texta_italic/Texta-Italic-webfont.ttf') format('truetype'),url('../assets/fonts/texta_italic/Texta-Italic-webfont.svg#svgFontName') format('svg');
+  /* Legacy iOS */
 }
-
 @font-face {
   font-family: 'Texta Bold';
-  src: url('../assets/fonts/texta_bold/Texta-Bold-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../assets/fonts/texta_bold/Texta-Bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/texta_bold/Texta-Bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/texta_bold/Texta-Bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../assets/fonts/texta_bold/Texta-Bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/texta_bold/Texta-Bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../assets/fonts/texta_bold/Texta-Bold-webfont.eot');
+  /* IE9 Compat Modes */
+  src:/* IE6-IE8 */
+  /* Super Modern Browsers */
+  /* Pretty Modern Browsers */
+  /* Safari, Android, iOS */
+  url('../assets/fonts/texta_bold/Texta-Bold-webfont.eot?#iefix') format('embedded-opentype'),url('../assets/fonts/texta_bold/Texta-Bold-webfont.woff2') format('woff2'),url('../assets/fonts/texta_bold/Texta-Bold-webfont.woff') format('woff'),url('../assets/fonts/texta_bold/Texta-Bold-webfont.ttf') format('truetype'),url('../assets/fonts/texta_bold/Texta-Bold-webfont.svg#svgFontName') format('svg');
+  /* Legacy iOS */
 }
-
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700);
-
 //colors
 $blue: #2c3e50;
 $red: #963019;
@@ -38,97 +40,78 @@ $white: #f6f1ed;
 $green: #667467;
 $yellow: #FEC44F;
 $black: #141414;
-
 /* General */
-
 .container {
-    background-color: white;
-    padding: 50px;
+  background-color: white;
+  padding: 50px;
 }
-
 img {
   width: 100%;
 }
-
 body {
   font-family: 'Texta', sans-serif;
   font-size: 14pt;
   color: $black;
   background-color: $white;
 }
-
 a {
   color: $black;
-
   &:hover {
     text-decoration: none;
     color: $red;
   }
 }
-
 em {
   font-family: 'Texta Italic', sans-serif;
   font-style: italic;
 }
-
 strong {
   font-family: 'Texta Bold', sans-serif;
   font-weight: 700;
 }
-
-::selection {
-  background: #E4B648; /* Webkit browers */
+ ::selection {
+  background: #E4B648;
+  /* Webkit browers */
 }
-
-::-moz-selection {
-  background: #E4B648; /* Gecko browsers */
+ ::-moz-selection {
+  background: #E4B648;
+  /* Gecko browsers */
 }
-
 input[type="text"]:focus {
-    outline: none;
+  outline: none;
 }
-
 input {
   margin: 0 auto;
   display: block;
   width: 200px;
   margin-top: 24px;
 }
-
 h1 {
   font-family: 'Noto Serif', serif;
   font-weight: 700;
   text-align: center;
-
 }
-
 .header-subtitle {
-    text-align: center;
-    margin-top: 0;
-    padding-top: 0;
-    font-size: 20pt;
-    margin-bottom: 24px;
-}
-
-.menu {
-
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 20pt;
   margin-bottom: 24px;
-
+}
+.menu {
+  margin-bottom: 24px;
   ul {
     list-style-type: none;
     margin: 0 auto;
     display: block;
     width: 400px;
   }
-
   li {
     display: inline-block;
   }
-
   @for $i from 2 through 4 {
     li:nth-of-type(#{$i}) {
       margin: 0 8px;
-
       &:before {
         content: ' | ';
         margin-right: 14px;
@@ -136,157 +119,155 @@ h1 {
     }
   }
 }
-
 /* DOCUMENT PAGE SPECIFIC STYLES */
-
 .highlighted {
   background: $yellow;
   font-weight: 700;
 }
-
 .docText {
   h4 {
     font-size: 12pt !important;
   }
   font-size: 12pt;
 }
-
 .document-text {
   p {
     text-indent: 35px;
   }
-
   .no-indent {
-    text-indent: 0px !important;
+    text-indent: 0 !important;
   }
-
-  .part-heading, .section-heading {
+  .part-heading,
+  .section-heading {
     text-transform: uppercase;
     font-weight: 700;
   }
-
   .article-heading {
     font-weight: 700;
     text-decoration: underline;
   }
-
   ol {
     counter-reset: list;
   }
   ol > li {
     list-style: none;
   }
-
   ol > li:before {
     content: "(" counter(list, lower-alpha) ") ";
     counter-increment: list;
   }
-
   .second-level {
     ol > li:before {
       content: "(" counter(list, decimal) ") ";
       counter-increment: list;
     }
   }
-
 }
-
 .states {
-        fill: #aaa;
-        stroke: #fff;
-        stroke-width: 0.75px;
+  fill: #aaa;
+  stroke: #fff;
+  stroke-width: 0.75px;
 }
 #container {
-  margin:2%;
-  padding:20px;
-  border:2px solid #d0d0d0;
+  margin: 2%;
+  padding: 20px;
+  border: 2px solid #d0d0d0;
   border-radius: 5px;
 }
-
 /* MAP PAGE SPECIFIC STYLES */
-
 #map {
   svg {
     display: block;
     margin: 0 auto;
   }
 }
-
 path.state {
   stroke: #000 !important;
 }
-
 #legend {
-    padding: 1.5em 0 0 1.5em;
+  padding: 1.5em 0 0 1.5em;
 }
-
 li.key {
-    border-top-width: 15px;
-    border-top-style: solid;
-    font-size: .65em;
-    width: 10%;
-    padding-left: 0;
-    padding-right: 0;
+  border-top-width: 15px;
+  border-top-style: solid;
+  font-size: 0.65em;
+  width: 10%;
+  padding-left: 0;
+  padding-right: 0;
 }
-
 @media (max-width: 765px) {
   li.key {
-    font-size: .40em;
+    font-size: 0.40em;
   }
 }
-
 @media (max-width: 767px) {
   li.key {
     display: none;
   }
   .legend-key {
-    font-size: .6em;
+    font-size: 0.6em;
   }
 }
-
 /* TIMELINE SPECIFIC STYLES */
-
-@media (max-width: 767px) {
-  #timeline {
-     display: none;
-   }
+.legend-img {
+  width: 200px;
+  display: block;
+  width: 200px;
+  float: right;
+  margin-left: 20px;
+  padding-right: 35px;
 }
-
-.timeline {
-
-  svg {
-    display: block;
-    margin: 0 auto;
+@media (max-width: 767px) {
+  #timeline, .legend-img {
+    display: none;
   }
+}
+@media (min-width: 992px) {
+  .legend-img {
+    display: none;
+  }
+}
+@media (max-width: 992px) and (min-width: 767px) {
+  .legend-img {
+    display: block;
+    width: 200px;
+    float: right;
+    margin-left: 20px;
+    padding-right: 35px;
+  }
+  .legend-svg {
+    display: none;
+  }
+}
+svg {
+  display: block;
+  margin: 0 auto;
+}
+.timeline {
 
   .tick {
     font-size: 12px;
   }
-
   .axis path,
   .axis line {
     fill: none;
     stroke: #000;
     shape-rendering: crispEdges;
   }
-
   circle {
     stroke: #000;
     cursor: pointer;
   }
-
   .tooltip {
     position: absolute;
     width: 150px;
     height: auto;
     pointer-events: none;
   }
-
   .y {
     display: none !important;
   }
 }
-
 .footer {
   margin: 24px 0;
   p {
@@ -297,10 +278,14 @@ li.key {
   }
   a {
     color: #777;
-
     &:hover {
       color: #777;
       text-decoration: underline;
     }
+  }
+}
+@media (max-width: 766px) {
+  .legend-svg {
+    display: none !important;
   }
 }

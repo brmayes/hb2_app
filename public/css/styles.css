@@ -156,10 +156,11 @@ h1 {
 }
 
 .document-text .no-indent {
-  text-indent: 0px !important;
+  text-indent: 0 !important;
 }
 
-.document-text .part-heading, .document-text .section-heading {
+.document-text .part-heading,
+.document-text .section-heading {
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -217,7 +218,7 @@ path.state {
 li.key {
   border-top-width: 15px;
   border-top-style: solid;
-  font-size: .65em;
+  font-size: 0.65em;
   width: 10%;
   padding-left: 0;
   padding-right: 0;
@@ -225,7 +226,7 @@ li.key {
 
 @media (max-width: 765px) {
   li.key {
-    font-size: .40em;
+    font-size: 0.40em;
   }
 }
 
@@ -234,18 +235,46 @@ li.key {
     display: none;
   }
   .legend-key {
-    font-size: .6em;
+    font-size: 0.6em;
   }
 }
 
 /* TIMELINE SPECIFIC STYLES */
+.legend-img {
+  width: 200px;
+  display: block;
+  width: 200px;
+  float: right;
+  margin-left: 20px;
+  padding-right: 35px;
+}
+
 @media (max-width: 767px) {
-  #timeline {
+  #timeline, .legend-img {
     display: none;
   }
 }
 
-.timeline svg {
+@media (min-width: 992px) {
+  .legend-img {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 767px) {
+  .legend-img {
+    display: block;
+    width: 200px;
+    float: right;
+    margin-left: 20px;
+    padding-right: 35px;
+  }
+  .legend-svg {
+    display: none;
+  }
+}
+
+svg {
   display: block;
   margin: 0 auto;
 }
@@ -295,4 +324,10 @@ li.key {
 .footer a:hover {
   color: #777;
   text-decoration: underline;
+}
+
+@media (max-width: 766px) {
+  .legend-svg {
+    display: none !important;
+  }
 }

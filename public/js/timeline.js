@@ -1,7 +1,5 @@
 
 // Set the dimensions of the canvas / graph
-
-
 var viewWidth = $(window).width();
 console.log(viewWidth);
 
