@@ -25,15 +25,27 @@
 }
 
 /* General */
-h1 {
-  font-family: 'Noto Serif', serif;
-  font-weight: 700;
+@media (max-width: 1200px) {
+  .container {
+    background-color: white;
+    padding: 25px;
+  }
 }
 
 body {
   font-family: 'Texta', sans-serif;
-  font-size: 15pt;
+  font-size: 14pt;
   color: #141414;
+  background-color: #f6f1ed;
+}
+
+a {
+  color: #141414;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #963019;
 }
 
 em {
@@ -56,8 +68,40 @@ strong {
   /* Gecko browsers */
 }
 
+input[type="text"]:focus {
+  outline: none;
+}
+
+input {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  margin-top: 24px;
+}
+
+h1 {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header-subtitle {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 20pt;
+  margin-bottom: 24px;
+}
+
+.menu {
+  margin-bottom: 24px;
+}
+
 .menu ul {
   list-style-type: none;
+  margin: 0 auto;
+  display: block;
+  width: 300px;
 }
 
 .menu li {
@@ -128,6 +172,11 @@ strong {
 }
 
 /* MAP PAGE SPECIFIC STYLES */
+#map svg {
+  display: block;
+  margin: 0 auto;
+}
+
 path.state {
   stroke: #000 !important;
 }
@@ -179,15 +228,36 @@ li.key {
 
 .timeline circle {
   stroke: #000;
+  cursor: pointer;
 }
 
 .timeline .tooltip {
   position: absolute;
-  width: 200px;
-  height: 28px;
+  width: 30px;
+  height: auto;
   pointer-events: none;
 }
 
 .timeline .y {
   display: none !important;
+}
+
+.footer {
+  margin: 24px 0;
+}
+
+.footer p {
+  margin: 0;
+  color: #777;
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer a {
+  color: #777;
+}
+
+.footer a:hover {
+  color: #777;
+  text-decoration: underline;
 }
