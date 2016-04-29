@@ -246,6 +246,12 @@ li.key {
 
 /* TIMELINE SPECIFIC STYLES */
 
+@media (max-width: 767px) {
+  #timeline {
+     display: none;
+   }
+}
+
 .timeline {
 
   svg {
