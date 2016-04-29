@@ -151,3 +151,30 @@ li.key {
     font-size: .6em;
   }
 }
+
+/* TIMELINE SPECIFIC STYLES */
+.timeline .tick {
+  font-size: 12px;
+}
+
+.timeline .axis path,
+.timeline .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.timeline circle {
+  stroke: #000;
+}
+
+.timeline .tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+
+.timeline .y {
+  display: none !important;
+}

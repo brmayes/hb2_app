@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 //routes
 app.get('/', myExports.index );
 app.get('/document', myExports.document );
-app.get('/numbers', myExports.numbers );
+app.get('/timeline', myExports.timeline );
 app.get('/map', myExports.map );
 
 //listen on the localhost

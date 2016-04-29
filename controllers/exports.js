@@ -6,8 +6,8 @@ exports.document = function(req, res){
   res.render('document');
 };
 
-exports.numbers = function(req, res){
-  res.render('numbers');
+exports.timeline = function(req, res){
+  res.render('timeline');
 };
 
 exports.map = function(req, res){
