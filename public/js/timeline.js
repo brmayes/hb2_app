@@ -48,7 +48,7 @@ var svg = d3.select("#timeline")
               "translate(" + margin.left + "," + margin.top + ")");
 
 //make tooltip
-var tooltip = d3.select("body")
+var tooltip = d3.select("#timeline")
   .append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
@@ -89,7 +89,7 @@ d3.csv("../data/timeline-data.csv", function(error, data) {
                  .style("opacity", .9);
             tooltip.html(d["event"])
                  .style("left", (d3.event.pageX - 45) + "px")
-                 .style("top", (d3.event.pageY - 65) + "px");
+                 .style("top", (d3.event.pageY - 85) + "px");
         })
         .on("mouseout", function(d) {
             tooltip.transition()
