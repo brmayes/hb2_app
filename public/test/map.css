@@ -1,0 +1,9 @@
+path.land {
+  fill: #eee;
+  stroke: #ddd;
+}
+
+path.state {
+  stroke: #eee;
+  stroke-width: 1.5;
+}

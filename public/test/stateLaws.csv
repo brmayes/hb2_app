@@ -1,0 +1,52 @@
+Name,GeoID,Status,Law
+Alabama,04000US01,0,
+Alaska,04000US02,0,
+Arizona,04000US04,0,
+Arkansas,04000US05,0,
+California,04000US06,2,"California bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Colorado,04000US08,2,"Colorado state law bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Connecticut,04000US09,2,"Connecticut state law bars discrimination based on sexual orientation in employment, housing and public accommodations. Gender identity discrimination is prohibited by the state under the category of sex discrimination."
+Delaware,04000US10,2,"Delaware bars discrimination based on sexual orientation and gender identity in housing and public accommodations. Sexual orientation is protected against all employment discrimination, while gender identity is protected only against public employment discrimination. Delaware's protections were put in place by an executive order, administrative order or personnel regulation prohibiting discrimination against public employees based on sexual orientation and gender identity."
+District of Columbia,04000US11,1,"The District of Columbia bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Florida,04000US12,0,
+Georgia,04000US13,0,
+Hawaii,04000US15,2,"Hawaii bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Idaho,04000US16,0,
+Illinois,04000US17,2,"Illinois bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Indiana,04000US18,0,
+Iowa,04000US19,2,"Iowa bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Kansas,04000US20,0,
+Kentucky,04000US21,0,
+Louisiana,04000US22,0,
+Maine,04000US23,2,"Maine bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Maryland,04000US24,2,"Maryland state law bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Massachusetts,04000US25,2,"Massachusetts state law bars discrimination based on sexual orientation and gender identity in employment and housing. Massachusetts bars discrimination based on sexual orientation in public accommodations, however gender identity is not protected."
+Michigan,04000US26,0,
+Minnesota,04000US27,2,"Minnesota bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Mississippi,04000US28,0,
+Missouri,04000US29,0,
+Montana,04000US30,0,
+Nebraska,04000US31,0,
+Nevada,04000US32,2,"Nevada bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+New Hampshire,04000US33,1,"New Hampshire bars discrimination based on sexual orientation in employment, housing and public accommodations, however gender identity is not protected."
+New Jersey,04000US34,2,"New Jersey bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+New Mexico,04000US35,2,"New Mexico bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+New York,04000US36,1,"New York bars discrimination based on sexual orientation in employment, housing and public accommodations, however gender identity is not protected.New York's protections were put in place by an executive order, administrative order or personnel regulation prohibiting discrimination against public employees based on sexual orientation and gender identity. In New York, the only prohibition against discrimination for gender identity is within the realm of public employment."
+North Carolina,04000US37,0,
+North Dakota,04000US38,0,
+Ohio,04000US39,0,
+Oklahoma,04000US40,0,
+Oregon,04000US41,2,"Oregon bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Pennsylvania,04000US42,0,
+Rhode Island,04000US44,2,"Rhode Island bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+South Carolina,04000US45,0,
+South Dakota,04000US46,0,
+Tennessee,04000US47,0,
+Texas,04000US48,0,
+Utah,04000US49,2,"Utah bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Vermont,04000US50,2,"Vermont bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+Virginia,04000US51,0,
+Washington,04000US53,2,"Washington bars discrimination based on sexual orientation and gender identity in employment, housing and public accommodations."
+West Virginia,04000US54,0,
+Wisconsin,04000US55,1,"Wisconsin bars discrimination based on sexual orientation in employment, housing and public accommodations, however gender identity is not protected."
+Wyoming,04000US56,0,
