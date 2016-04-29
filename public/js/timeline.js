@@ -1,7 +1,12 @@
 
 // Set the dimensions of the canvas / graph
+
+
+var viewWidth = $(window).width();
+console.log(viewWidth);
+
 var margin = {top: 30, right: 20, bottom: 30, left: 50},
-    width = 750 - margin.left - margin.right,
+    width = viewWidth/1.65 - margin.left - margin.right,
     height = 100 - margin.top - margin.bottom;
 
 // Parse the date / time
