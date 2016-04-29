@@ -30,6 +30,10 @@
   padding: 50px;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-family: 'Texta', sans-serif;
   font-size: 14pt;

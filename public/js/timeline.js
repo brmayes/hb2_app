@@ -2,7 +2,7 @@
 // Set the dimensions of the canvas / graph
 var margin = {top: 30, right: 20, bottom: 30, left: 50},
     width = 750 - margin.left - margin.right,
-    height = 200 - margin.top - margin.bottom;
+    height = 100 - margin.top - margin.bottom;
 
 // Parse the date / time
 var parseDate = d3.time.format("%d-%b-%y").parse;
@@ -25,13 +25,13 @@ var yAxis = d3.svg.axis()
 
 // setup fill color
 var cValue = function(d) { return d.type;},
-    color = d3.scale.category10();
-
-var cValue = function(d) {
-  return d.type;
-
-  console.log(d.type);
-}
+    color = function(d) {
+    if (d.type == "Action") {
+      return "rgb(217, 95, 14)";
+    } else {
+      return "rgb(254, 196, 79)";
+    }
+  };
 
 // Define the line
 // var valueline = d3.svg.line()
@@ -76,7 +76,13 @@ d3.csv("../data/timeline-data.csv", function(error, data) {
         .attr("r", 3.5)
         .attr("cx", function(d) { return x(d.date); })
         .attr("cy", function(d) { return y(0); })
-        .style("fill", function(d) { return color(cValue(d));})
+        .style("fill", function(d) {
+          if (d.type == "Action") {
+            return "rgb(217, 95, 14)";
+          } else {
+            return "rgb(254, 196, 79)";
+          }
+        })
         .on("mouseover", function(d) {
             tooltip.transition()
                  .duration(200)
@@ -104,25 +110,34 @@ d3.csv("../data/timeline-data.csv", function(error, data) {
 
     // draw legend
     var legend = svg.selectAll(".legend")
-        .data(color.domain())
+        .data(data)
       .enter().append("g")
         .attr("class", "legend")
         .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-    // draw legend colored rectangles
-    legend.append("rect")
-        .attr("x", width - 18)
-        .attr("width", 18)
-        .attr("height", 18)
-        .style("fill", color);
-
-    // draw legend text
-    legend.append("text")
-        .attr("x", width - 24)
-        .attr("y", 9)
-        .attr("dy", ".35em")
-        .style("text-anchor", "end")
-        .text(function(d) { return d;})
+    // // draw legend colored rectangles
+    // legend.append("rect")
+    //     .attr("x", width - 18)
+    //     .attr("width", 18)
+    //     .attr("height", 18)
+    //     .style("fill",  function(d) {
+    //       // return color(cValue(d));
+    //
+    //       console.log(d.type);
+    //       if (d.type == "Action") {
+    //         return "rgb(217, 95, 14)";
+    //       } else {
+    //         return "rgb(254, 196, 79)";
+    //       }
+    //     });
+    //
+    // // draw legend text
+    // legend.append("text")
+    //     .attr("x", width - 24)
+    //     .attr("y", 9)
+    //     .attr("dy", ".35em")
+    //     .style("text-anchor", "end")
+    //     .text(function(d) { return d;})
 });
 
 //sources
