@@ -81,6 +81,11 @@ strong {
 
 /* DOCUMENT PAGE SPECIFIC STYLES */
 
+.highlighted {
+  background: $yellow;
+  font-weight: 700;
+}
+
 .document-text {
   p {
     text-indent: 35px;
@@ -119,5 +124,16 @@ strong {
     }
   }
 
+}
 
+.states {
+        fill: #aaa;
+        stroke: #fff;
+        stroke-width: 0.75px;
+}
+#container {
+  margin:2%;
+  padding:20px;
+  border:2px solid #d0d0d0;
+  border-radius: 5px;
 }

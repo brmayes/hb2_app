@@ -65,6 +65,11 @@ strong {
 }
 
 /* DOCUMENT PAGE SPECIFIC STYLES */
+.highlighted {
+  background: #E4B648;
+  font-weight: 700;
+}
+
 .document-text p {
   text-indent: 35px;
 }
@@ -99,4 +104,17 @@ strong {
 .document-text .second-level ol > li:before {
   content: "(" counter(list, decimal) ") ";
   counter-increment: list;
+}
+
+.states {
+  fill: #aaa;
+  stroke: #fff;
+  stroke-width: 0.75px;
+}
+
+#container {
+  margin: 2%;
+  padding: 20px;
+  border: 2px solid #d0d0d0;
+  border-radius: 5px;
 }
