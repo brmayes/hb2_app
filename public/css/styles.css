@@ -70,6 +70,14 @@ strong {
   font-weight: 700;
 }
 
+.docText {
+  font-size: 12pt;
+}
+
+.docText h4 {
+  font-size: 12pt !important;
+}
+
 .document-text p {
   text-indent: 35px;
 }
@@ -153,6 +161,11 @@ li.key {
 }
 
 /* TIMELINE SPECIFIC STYLES */
+.timeline svg {
+  display: block;
+  margin: 0 auto;
+}
+
 .timeline .tick {
   font-size: 12px;
 }

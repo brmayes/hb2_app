@@ -16,16 +16,20 @@
   </head>
 
   <body ng-controller="BaseController as base">
-    <div id="header"></div>
-
     <div class="container">
+      <div id="header"></div>
+      <p>
+        HB2 has caused vast amounts of public outcry for more reasons than one. The law also enables legal discrimination in state courts based on claims of race, religion, color, national origin or handicap in state courts. Although not explicitly stated, the bill does more than meets the eye.
+      </p>
+      <p>
+        Break down HB2 by using the search bar to highlight certain aspects of the law.
+      </p>
       <input type="text" placeholder="Search" ng-model="search.text"><br><br>
 
       <!-- with filter -->
-      <div ng-repeat="item in data" ng-bind-html="item.text | highlight:search.text"></div>
+      <div class="docText" ng-repeat="item in data" ng-bind-html="item.text | highlight:search.text"></div>
+      <div id="footer"></div>
     </div>
-
-    <div id="footer"></div>
   </div>
 </body>
 
