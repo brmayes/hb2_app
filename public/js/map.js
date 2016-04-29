@@ -145,3 +145,26 @@
 
     code.html(highlight.value);
   });
+
+  var legend = d3.select('#legend')
+  .append('ul')
+    .attr('class', 'list-inline');
+
+  var keys = legend.selectAll('li.key')
+      .data(colors.range());
+
+  keys.enter().append('li')
+      .attr('class', 'key')
+      .style('border-top-color', String)
+      .text(function(d) {
+          var r = colors.invertExtent(d);
+          var laws = formats.percent(r[0]);
+
+          if (laws == "0%") {
+            return "No laws";
+          } else if (laws == "33%") {
+            return "Some laws";
+          } else if (laws == "67%") {
+            return "Has laws";
+          }
+      });

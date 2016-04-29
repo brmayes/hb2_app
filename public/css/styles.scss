@@ -143,3 +143,31 @@ strong {
 path.state {
   stroke: #000 !important;
 }
+
+#legend {
+    padding: 1.5em 0 0 1.5em;
+}
+
+li.key {
+    border-top-width: 15px;
+    border-top-style: solid;
+    font-size: .65em;
+    width: 10%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 765px) {
+  li.key {
+    font-size: .40em;
+  }
+}
+
+@media (max-width: 767px) {
+  li.key {
+    display: none;
+  }
+  .legend-key {
+    font-size: .6em;
+  }
+}
